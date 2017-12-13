@@ -27,6 +27,7 @@ function generateCardData(){
             }
         }
 
+        //window.location = thisQuery;
         httpGetAsync(thisQuery, parseCardData);
     }
 }
@@ -45,5 +46,5 @@ function httpGetAsync(theUrl, callback)
 
 function parseCardData(responseData)
 {
-    
+    window.location = responseData;
 }

@@ -11,14 +11,14 @@
             <h1 id="title_header">Magic Proxies</h1>
         </div>
         <div id="list_form">
-            <form id="proxy_form" method="get" action="https://api.scryfall.com/card/search">
-                <textarea id="card_input" name="search" placeholder="Input your cards here:
+            <form id="proxy_form">
+                <textarea id="card_input" placeholder="Input your cards here:
 Format:
 4 lightning bolt
 2 birds of paradise
 3 watery grave"></textarea>
-                <button id="proxy_button" onclick="generateCardData()" value="Proxy up!">
             </form>
+            <button class="button" onclick="generateCardData()"><span>Submit</span></button>
         </div>
     </body>
 </html>
