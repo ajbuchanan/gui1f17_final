@@ -1,3 +1,14 @@
+<!--
+======NOTES=======
+test image = <img id="test_img" src="https://img.scryfall.com/cards/normal/en/e01/54.jpg?1508809734" alt="test image" width="200" height="200">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+==================
+
+Alexander Buchanan
+ID: 01408299
+email: alexander_buchanan@student.uml.edu
+gitHub link: https://github.com/ajbuchanan/gui1f17_final
+-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,15 +21,44 @@
         <div id="header">
             <h1 id="title_header">Magic Proxies</h1>
         </div>
-        <div id="list_form">
+        <div id="input">
             <form id="proxy_form">
                 <textarea id="card_input" placeholder="Input your cards here:
 Format:
 4 lightning bolt
 2 birds of paradise
-3 watery grave"></textarea>
+3 watery grave
+
+-or-
+
+lightning bolt
+lightning bolt
+lightning bolt
+lightning bolt
+birds of paradise
+birds of paradise
+watery grave
+watery grave
+watery grave"></textarea>
             </form>
-            <button class="button" onclick="generateCardData()"><span>Submit</span></button>
+            <div class="btn_cont">
+                <button class="button" onclick="generateCardData()"><span>Proxy Up!</span></button>
+                <button class="button" onclick="showInstructions()"><span>Instructions</span></button>
+            </div>
+            <p id="instructions" class="instructions" style="display:none"><u>Instructions:</u><br>
+Just input the cards you'd like to proxy in the following format:<br>
+X CARD_NAME<br><br>
+Where X is the number of the proxies you'd like (defaults to 1)<br>
+and CARD_NAME is any valid Magic: The Gathering Card name<br><br>
+If your card isn't showing up its probably because of <br>a typo in the name or in the formatting<br><br>
+Special Thanks to Scryfall.com for creating a wonderful API that makes all this possible
+            </p>
+        </div>
+        <div id="img_options" style="display:none">
+            <button class="button" onclick="backToInput()"><span>Back</span></button>
+            <button class="button" onclick="printPage()"><span>Print</span></button>
+        </div>
+        <div id="card_imgs">
         </div>
     </body>
 </html>

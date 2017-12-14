@@ -1,3 +1,53 @@
+/*
+Name: Alexander Buchanan
+ID: 01408299
+Email: alexander_buchanan@student.uml.edu
+gitHub link: https://github.com/ajbuchanan/gui1f17_final
+*/
+body{
+    color: rgb(41, 41, 80);
+    font-family: Verdana, Geneva, sans-serif; 
+}
 
-#card_input { width: 400px ; height: 350px; font-size: 12pt }
-#card_input.placeholder { color: rgb(92, 90, 90); font-family: 'Open Sans', sans-serif; font-size: 9pt; }
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(41, 41, 80);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn_cont{
+    text-align: center;
+}
+
+.instructions{
+    text-align: center;
+}
+
+#header{
+    background: lightslategray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#card_input { 
+    width: 40% ; 
+    height: 350px; 
+    font-size: 12pt;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#card_input.placeholder { 
+    color: rgb(92, 90, 90); 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 9pt; 
+}
